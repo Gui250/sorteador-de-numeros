@@ -1,0 +1,29 @@
+.sessao-principal {
+  margin-top: 5.5625rem;
+  max-width: 68.625rem;
+  margin-left: auto;
+}
+
+.sessao-principal span {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 1rem;
+  color: var(--content-secondary);
+}
+
+.sessao-principal h1 {
+  font-family: "Sora", sans-serif;
+  font-size: 4.5rem;
+  color: var(--content-primary);
+  margin-top: 0.75rem;
+  line-height: 130%;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.title-container {
+  max-width: 31.75rem;
+}
+
+.description-container {
+  max-width: 24.125rem;
+}
