@@ -37,3 +37,28 @@ body {
   --gradient-background: linear-gradient(90deg, #d586e0 0%, #91a1fa 98.93%);
   --gradient-content: linear-gradient(90deg, #c7c9cc 0%, #3d3d3d 100%);
 }
+
+
+
+@media(max-width: 640px) {
+  header {
+    max-width: 10.75rem;
+    margin: auto;
+  }
+
+  .sessao-principal {
+    margin-top: 2.876rem;
+    display: flex;
+    padding: 2.75rem 2.1875rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .label-container {
+    margin: auto;
+    max-width: 19.375rem;
+  }
+
+
+}

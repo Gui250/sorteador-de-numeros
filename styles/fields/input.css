@@ -29,3 +29,14 @@ input[type="number"] {
     color: #FFFFFF;
     font-weight: bold;
 }
+
+@media(max-width: 640px) {
+    .input-container {
+        flex-direction: column-reverse;
+    }
+    
+    input[type="number"] {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+}
