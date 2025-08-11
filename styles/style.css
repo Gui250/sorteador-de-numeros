@@ -2,3 +2,7 @@
 @import url("./fields/header.css");
 @import url("./fields/sessao_principal.css");
 @import url("./fields/description.css");
+@import url("./fields/sort.css");
+@import url("./fields/title.css");
+@import url("./fields/label-container.css");
+@import url("./fields/input.css");

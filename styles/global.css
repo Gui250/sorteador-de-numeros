@@ -5,7 +5,9 @@
 }
 
 body {
-  background-color: var(--background-secondary);
+  background-color: var(--background-primary);
+  background-image: url("../assets/Linha.svg");
+  background-position: center;
 }
 
 :root {

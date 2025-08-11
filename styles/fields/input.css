@@ -1,0 +1,31 @@
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container label {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 1.25rem;
+    color: var(--content-secondary);
+}
+
+input[type="number"] { 
+    margin-top: 0.5rem;
+    width: 5.375rem;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+    background-color: var(--background-secondary);
+    border: 1px solid #111012;
+    border-radius: 8px;
+    font-size: 2rem;
+    font-family: "Sora", sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+}

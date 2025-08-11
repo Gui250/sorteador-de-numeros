@@ -1,7 +1,8 @@
 .sessao-principal {
-  margin-top: 5.5625rem;
+  display: flex;
+  margin: 5.5625rem auto;
   max-width: 68.625rem;
-  margin-left: auto;
+  gap: 6.75rem;
 }
 
 .sessao-principal span {
@@ -12,7 +13,7 @@
 
 .sessao-principal h1 {
   font-family: "Sora", sans-serif;
-  font-size: 4.5rem;
+  font-size: 3.2rem;
   color: var(--content-primary);
   margin-top: 0.75rem;
   line-height: 130%;
@@ -24,6 +25,4 @@
   max-width: 31.75rem;
 }
 
-.description-container {
-  max-width: 24.125rem;
-}
+
