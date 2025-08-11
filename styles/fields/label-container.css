@@ -1,6 +1,5 @@
-.label-container { 
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    max-width: 31.75rem;
+.label-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 31.75rem;
 }

@@ -21,8 +21,12 @@
   font-weight: 600;
 }
 
-.title-container {
+.left-content {
+  display: flex;
+  flex-direction: column;
   max-width: 31.75rem;
 }
 
-
+.title-container {
+  max-width: 31.75rem;
+}

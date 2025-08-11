@@ -38,27 +38,29 @@ body {
   --gradient-content: linear-gradient(90deg, #c7c9cc 0%, #3d3d3d 100%);
 }
 
-
-
-@media(max-width: 640px) {
+@media (max-width: 640px) {
   header {
     max-width: 10.75rem;
     margin: auto;
   }
 
   .sessao-principal {
-    margin-top: 2.876rem;
+    margin: 2.876rem auto;
     display: flex;
+    align-items: center;
     padding: 2.75rem 2.1875rem;
+    flex-direction: column;
+  }
+
+  .left-content {
+    max-width: 100%;
+  }
+
+  .title-container {
+    max-width: 100%;
+  }
+  .content {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
   }
-
-  .label-container {
-    margin: auto;
-    max-width: 19.375rem;
-  }
-
-
 }
