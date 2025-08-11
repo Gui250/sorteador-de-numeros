@@ -23,21 +23,6 @@ Uma aplicação web moderna para sorteio de números aleatórios com interface e
 - JavaScript (em desenvolvimento)
 - Google Fonts (Roboto Mono, Roboto Flex, Sora)
 
-## 📁 Estrutura do projeto
-
-```
-sorteador-de-numeros/
-├── assets/
-│   └── logo.svg
-├── styles/
-│   ├── fields/
-│   │   ├── header.css
-│   │   └── sessao_principal.css
-│   ├── global.css
-│   └── style.css
-├── index.html
-└── README.md
-```
 
 ## 🎨 Design
 
@@ -50,10 +35,6 @@ O projeto utiliza um sistema de design moderno com:
 ## 📝 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
-
-## 🤝 Contribuição
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
 
 ---
 
