@@ -57,4 +57,4 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull re
 
 ---
 
-Feito com ❤️ por [Seu Nome]
+Feito com ❤️ por Guilherme Moreno
