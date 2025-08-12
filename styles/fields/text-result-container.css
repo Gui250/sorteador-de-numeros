@@ -1,0 +1,21 @@
+.text-result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.title-sort {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--content-primary);
+}
+
+.paragraph-sort {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--content-secondary);
+}
