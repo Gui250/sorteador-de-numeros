@@ -17,6 +17,22 @@
   margin-top: 0.625rem;
 }
 
-.app {
+.tentar-novamente-btn {
+  background: var(--background-tertiary);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-family: "Sora", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--content-primary);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-top: 2rem;
+  width: 100%;
+  text-transform: uppercase;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }

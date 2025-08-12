@@ -47,17 +47,30 @@ const sortearNumeros = () => {
 
   const numeroSorteadoText = document.createElement("p");
   numeroSorteadoText.classList.add("sorteado-text");
-  numeroSorteadoText.innerText = numerosSorteados.sort((a, b) => a - b).join(", ");
-
-  // Debug: verificar se as classes foram aplicadas
-  console.log("Classes do container:", numeroSorteadoContainer.classList);
-  console.log("Classes do texto:", numeroSorteadoText.classList);
-  console.log("Números sorteados:", numerosSorteados);
+  numeroSorteadoText.innerText = numerosSorteados
+    .sort((a, b) => a - b)
+    .join(", ");
 
   numeroSorteadoContainer.appendChild(numeroSorteadoText);
 
   // Substitui o input-wrapper pelo numeroSorteadoContainer
   inputWrapper.parentNode.replaceChild(numeroSorteadoContainer, inputWrapper);
+
+  const tentarNovamenteBtn = document.createElement("button");
+  tentarNovamenteBtn.classList.add("tentar-novamente-btn");
+  tentarNovamenteBtn.innerText = "Tentar Novamente";
+
+  sortBtn.parentNode.replaceChild(tentarNovamenteBtn, sortBtn);
+
+  tentarNovamenteBtn.addEventListener("click", () => {
+    numeroSorteadoContainer.parentNode.replaceChild(
+      inputWrapper,
+      numeroSorteadoContainer
+    );
+    quantidadeNumeros.value = "";
+    numeroMinimo.value = "";
+    numeroMaximo.value = "";
+  });
 };
 
 sortBtn.addEventListener("click", sortearNumeros);
