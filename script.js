@@ -4,7 +4,7 @@ const numeroMinimo = document.getElementById("numero-minimo");
 const numeroMaximo = document.getElementById("numero-maximo");
 const inputWrapper = document.getElementById("input-wrapper");
 const sortContainer = document.getElementById("sort-container");
-
+const btnNaoRepetir = document.getElementById("toggle-input");
 const sortearNumeros = () => {
   const qtdNumeros = parseInt(quantidadeNumeros.value);
   const min = parseInt(numeroMinimo.value);
@@ -30,14 +30,21 @@ const sortearNumeros = () => {
 
   const numerosSorteados = [];
 
-  // Gera números únicos
-  for (let i = 0; i < qtdNumeros; i++) {
-    const numeroSorteado = Math.floor(Math.random() * (max - min + 1)) + min;
+  if (btnNaoRepetir.checked) {
+    // Gera números únicos (sem repetição)
+    for (let i = 0; i < qtdNumeros; i++) {
+      let numeroSorteado;
+      do {
+        numeroSorteado = Math.floor(Math.random() * (max - min + 1)) + min;
+      } while (numerosSorteados.includes(numeroSorteado));
 
-    if (!numerosSorteados.includes(numeroSorteado)) {
       numerosSorteados.push(numeroSorteado);
-    } else {
-      i--; // Decrementa para tentar novamente
+    }
+  } else {
+    // Gera números duplicados
+    for (let i = 0; i < qtdNumeros; i++) {
+      const numeroSorteado = Math.floor(Math.random() * (max - min + 1)) + min;
+      numerosSorteados.push(numeroSorteado);
     }
   }
 
