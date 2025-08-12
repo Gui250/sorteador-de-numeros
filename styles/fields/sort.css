@@ -10,7 +10,7 @@
   font-size: 1.25rem;
 }
 
-.sort-container p {
+.sort-container .sort-text-container p {
   color: var(--content-secondary);
   font-family: "Roboto Flex", sans-serif;
   font-size: 1rem;
