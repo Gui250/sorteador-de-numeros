@@ -72,8 +72,6 @@ const sortearNumeros = () => {
   img.alt = "Tentar Novamente";
   tentarNovamenteBtn.appendChild(img);
 
-
-
   sortBtn.parentNode.replaceChild(tentarNovamenteBtn, sortBtn);
 
   tentarNovamenteBtn.addEventListener("click", () => {
@@ -84,6 +82,8 @@ const sortearNumeros = () => {
     quantidadeNumeros.value = "";
     numeroMinimo.value = "";
     numeroMaximo.value = "";
+
+    tentarNovamenteBtn.parentNode.replaceChild(sortBtn, tentarNovamenteBtn);
   });
 };
 
