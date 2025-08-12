@@ -4,7 +4,7 @@ const numeroMinimo = document.getElementById("numero-minimo");
 const numeroMaximo = document.getElementById("numero-maximo");
 const inputWrapper = document.getElementById("input-wrapper");
 const sortContainer = document.getElementById("sort-container");
-const btnNaoRepetir = document.getElementById("toggle-input");
+const btnNaoRepetir = document.querySelector(".toggle-input");
 const sortearNumeros = () => {
   const qtdNumeros = parseInt(quantidadeNumeros.value);
   const min = parseInt(numeroMinimo.value);
@@ -66,6 +66,13 @@ const sortearNumeros = () => {
   const tentarNovamenteBtn = document.createElement("button");
   tentarNovamenteBtn.classList.add("tentar-novamente-btn");
   tentarNovamenteBtn.innerText = "Tentar Novamente";
+
+  const img = document.createElement("img");
+  img.src = "./assets/Frame3.svg";
+  img.alt = "Tentar Novamente";
+  tentarNovamenteBtn.appendChild(img);
+
+
 
   sortBtn.parentNode.replaceChild(tentarNovamenteBtn, sortBtn);
 
